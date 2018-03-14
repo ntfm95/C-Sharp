@@ -10,11 +10,11 @@ namespace TrianguloEConersorSeg
     {
         static void Main(string[] args)
         {
-            int op = 0;
+            sbyte op = 0;
             do
             {
                 Console.WriteLine("Digite 1 para Triângulo maluco \nDigite 2 para Conversor de segundos \nDigite 3 para sair");
-
+                op = Convert.ToSByte(Console.ReadLine());
                 if (op == 1)
                 {
                     Triangulo();
@@ -53,7 +53,6 @@ namespace TrianguloEConersorSeg
             {
                 Console.WriteLine("Escaleno");
             }
-            Console.ReadKey();
         }
 
         static void Conversor()
@@ -69,7 +68,6 @@ namespace TrianguloEConersorSeg
             seg = seg % 60;
 
             Console.WriteLine(hora + ":" + min  + ":" + seg);
-            Console.ReadKey();
         }
     }
 }
